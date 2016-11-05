@@ -6,8 +6,9 @@
 <html lang="en">
     <!--<![endif]-->
     <head>
+    	<link href="Styles.css" rel="stylesheet" type="text/css">
         <!-- Title -->
-        <title>Bird Log Book</title>
+        <title>Habitat - A Professional Bootstrap Template</title>
         <!-- Meta -->
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="description" content="">
@@ -47,112 +48,62 @@
             <div id="hornav" class="bottom-border-shadow">
                 <div class="container no-padding border-bottom">
                     <div class="row">
-                        <!-- <div class="col-md-8 no-padding"> -->
+                        <div class="col-md-8 no-padding">
                             <div class="visible-lg">
                                 <ul id="hornavmenu" class="nav navbar-nav">
                                     <li>
                                         <a href="index.html" class="fa-home active">Home</a>
                                     </li>
                                     <li>
-<<<<<<< HEAD
-                                        <a href="Bird Glossary.html" class="fa-gears ">Bird Glossary</a>
+                                        <span class="fa-gears ">Animal Glossary</span>
                                         
-=======
-                                        <span class="fa-gears ">Animal Glossary</span>                                  
->>>>>>> c9e89ca582efc93738e183c7756edf3ebea3abce
                                     <li>
-                                        <span class="fa-th ">Map</span>
+                                        <span class="fa-th ">Template Library</span>
                                     </li>
                                     <li>
                                         <span class="fa-font ">Log Note Library</span>
                                         <ul>
                                             <li>
-                                                <a href="My-Log-Notes.html">My Log Notes</a>
+                                                <a href="blog-list.html">My Log Notes</a>
                                             </li>
                                             <li>
-                                                <a href="Shared-Log-Notes.html">Shared Log Notes</a>
-                                            </li>
-                                        </ul>
-                                    </li><li>
-                                        <span class="fa-th active">Gallery</span>
-                                        <ul>
-                                            <li>
-                                                <a href="portfolio-2-column.html">Images</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-3-column.html">Log Notes</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-4-column.html">Sounds</a>
-                                            </li>
-                                            <li>
-                                                <a href="portfolio-6-column.html">Templates</a>
+                                                <a href="blog-single.html">Public</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="Gallery.html" class="fa-comment ">Gallery</a>
+                                        <a href="contact.html" class="fa-comment ">Contact</a>
                                     </li>
-                                    <li>
-                                        <a href="contact.html" class="fa-comment ">Contact Us</a>
-                                    </li>
-                                    <div class="login btn padding-horiz-20">
-                                        <button type="button" class="btn btn-success"><a href="pages-login.html">Log In</a></button>
-                                        <button type="button" class="btn btn-success"><a href="pages-sign-up.html">Sign Up</a></button>
-                                    </div>
-                                    
                                 </ul>
                             </div>
-                            
                         </div>
-                    <!-- </div> -->
+                    </div>
                 </div>
             </div>
             <!-- End Top Menu -->
             <!-- === END HEADER === -->
             <!-- === BEGIN CONTENT === -->
-            <div id="slideshow" class="bottom-border-shadow">
-                <div class="container no-padding background-white bottom-border">
-                    <div class="row">
-                        <!-- Carousel Slideshow -->
-                        <div id="carousel-example" class="carousel slide" data-ride="carousel">
-                            <!-- Carousel Indicators -->
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example" data-slide-to="1"></li>
-                                <li data-target="#carousel-example" data-slide-to="2"></li>
-                            </ol>
-                            <div class="clearfix"></div>
-                            <!-- End Carousel Indicators -->
-                            <!-- Carousel Images -->
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <img src="assets/img/slideshow/slide1.jpg">
-                                </div>
-                                <div class="item">
-                                    <img src="assets/img/slideshow/slide2.jpg">
-                                </div>
-                                <div class="item">
-                                    <img src="assets/img/slideshow/slide3.jpg">
-                                </div>
-                                <div class="item">
-                                    <img src="assets/img/slideshow/slide4.jpg">
-                                </div>
-                            </div>
-                            <!-- End Carousel Images -->
-                            <!-- Carousel Controls -->
-                            <a class="left carousel-control" href="#carousel-example" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                            </a>
-                            <a class="right carousel-control" href="#carousel-example" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
-                            <!-- End Carousel Controls -->
-                        </div>
-                        <!-- End Carousel Slideshow -->
-                    </div>
-                </div>
-            </div>
+            <div class="species clearfix" >
+		<p >Species :</p>
+        <div class="site-search">
+				<form method="get" action="index.html">
+					<input type="search" name="search-box">
+					<button type="submit">  </button>
+				</form>
+			</div><!--site-search--></div>
+<section><div id="map"></div>
+<script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 7, lng: 76},
+          zoom: 4
+        });
+      }
+    </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrUIjSGN6kVO4QzNSQlif0fu2S--N2hVo&callback=initMap"
+    async defer></script></section>
+
             <!--<div id="icons" class="bottom-border-shadow">
                 <div class="container background-grey bottom-border">
                     <div class="row padding-vert-60">
@@ -304,6 +255,59 @@
             </div>
             <!-- End Portfolio -->
             <!-- === END CONTENT === -->
+            <!-- === BEGIN FOOTER === -->
+            <div id="base">
+                <div class="container bottom-border padding-vert-30">
+                    <div class="row">
+                        <!-- Disclaimer -->
+                        <div class="col-md-4">
+                            <h3 class="class margin-bottom-10">Disclaimer</h3>
+                            <p>All stock images on this template demo are for presentation purposes only, intended to represent a live site and are not included with the template or in any of the Joomla51 club membership plans.</p>
+                            <p>Most of the images used here are available from
+                                <a href="http://www.shutterstock.com/" target="_blank">shutterstock.com</a>. Links are provided if you wish to purchase them from their copyright owners.</p>
+                        </div>
+                        <!-- End Disclaimer -->
+                        <!-- Contact Details -->
+                        <div class="col-md-4 margin-bottom-20">
+                            <h3 class="margin-bottom-10">Contact Details</h3>
+                            <p>
+                                <span class="fa-phone">Telephone:</span>1-800-123-4567
+                                <br>
+                                <span class="fa-envelope">Email:</span>
+                                <a href="mailto:info@example.com">info@example.com</a>
+                                <br>
+                                <span class="fa-link">Website:</span>
+                                <a href="http://www.example.com">www.example.com</a>
+                            </p>
+                            <p>The Dunes, Top Road,
+                                <br>Strandhill,
+                                <br>Co. Sligo,
+                                <br>Ireland</p>
+                        </div>
+                        <!-- End Contact Details -->
+                        <!-- Sample Menu -->
+                        <div class="col-md-4 margin-bottom-20">
+                            <h3 class="margin-bottom-10">Sample Menu</h3>
+                            <ul class="menu">
+                                <li>
+                                    <a class="fa-tasks" href="#">Placerat facer possim</a>
+                                </li>
+                                <li>
+                                    <a class="fa-users" href="#">Quam nunc putamus</a>
+                                </li>
+                                <li>
+                                    <a class="fa-signal" href="#">Velit esse molestie</a>
+                                </li>
+                                <li>
+                                    <a class="fa-coffee" href="#">Nam liber tempor</a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <!-- End Sample Menu -->
+                    </div>
+                </div>
+            </div>
             <!-- Footer -->
             <div id="footer" class="background-grey">
                 <div class="container">
