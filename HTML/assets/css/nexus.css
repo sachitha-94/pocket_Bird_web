@@ -758,7 +758,7 @@ p.site-slogan {
 #hornav ul#hornavmenu > li > span.active,
 #hornav ul#hornavmenu > li > a.current,
 #hornav ul#hornavmenu > li > span.current {
-  background: #6c9c6a;
+
 }
 #hornav .nav > li > a:hover,
 #hornav .nav > li > a:focus {
@@ -1174,6 +1174,7 @@ a:active,
 a:focus {
 	outline: 0;
 	text-decoration: none;
+	margin-bottom: 0pt;
 }
 p {
   margin-bottom: 16px;
@@ -1186,7 +1187,10 @@ hr {
 }
 img {
 	max-width: 100%;
-	margin-top: -22px;
+	margin-top: -8pt;
+	margin-bottom: -8pt;
+	margin-right: -8pt;
+	margin-left: -8pt;
 }
 .icon-list {
   padding-left: 30px;
