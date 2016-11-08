@@ -7,7 +7,7 @@
     <!--<![endif]-->
     <head>
         <!-- Title -->
-        <title>Bird Log Book</title>
+        <title>Habitat - A Professional Bootstrap Template</title>
         <!-- Meta -->
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="description" content="">
@@ -28,6 +28,7 @@
     </head>
     <body>
         <div id="body-bg">
+
             <!-- Header -->
             <div id="header">
                 <div class="container">
@@ -47,17 +48,16 @@
             <div id="hornav" class="bottom-border-shadow">
                 <div class="container no-padding border-bottom">
                     <div class="row">
-                        <!-- <div class="col-md-8 no-padding"> -->
+                        <!--div class="col-md-8 no-padding"-->
                             <div class="visible-lg">
                                 <ul id="hornavmenu" class="nav navbar-nav">
                                     <li>
                                         <a href="index.html" class="fa-home ">Home</a>
                                     </li>
                                     <li>
-                                        <a href="Bird Glossary.html" class="fa-gears ">Bird Glossary</a>
-                                        
+                                     <a href="Bird Glossary.html" class="fa-gears ">Bird Glossary</a>                                 
                                     <li>
-                                        <a href="map.html" class="fa-home ">Map</a>
+                                        <a href="map.html" class="fa-home active">Map</a>
                                     </li>
                                     <li>
                                         <span class="fa-font ">Log Note Library</span>
@@ -69,16 +69,23 @@
                                                 <a href="Shared-Log-Notes.html">Shared Log Notes</a>
                                             </li>
                                         </ul>
-                                    </li>
-                                    <li>
+                                    </li><li>
                                         <a href="Gallery.html" class="fa-th ">Gallery</a>
+                                       
                                     </li>
                                     <li>
                                         <a href="contact.html" class="fa-comment ">Contact Us</a>
                                     </li>
+                                    <div class="login btn padding-horiz-20">
+                               		<button type="button" class="btn btn-success"><a href="pages-login.html">Log In</a>
+                                    </button>
+                                    <button type="button" class="btn btn-success"><a href="pages-sign-up.html">Sign Up</a>
+                                    </button>                              
+                            
                                 </ul>
                             </div>
-                        <!-- </div> -->
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -88,55 +95,104 @@
             <div id="content">
                 <div class="container background-white">
                     <div class="row margin-vert-30">
-                        <!-- Register Box -->
-                        <div class="col-md-6 col-md-offset-3 col-sm-offset-3">
-                            <form class="signup-page">
-                                <div class="signup-header">
-                                    <h2>Register a new account</h2>
-                                    <p>Already a member? Click
-                                        <a href="#">HERE</a>to login to your account.</p>
+                        <div class="col-md-12">
+                            <h2 class="margin-bottom-10">MAP</h2>
+                            <!-- Intro / Why Us? -->
+                            <div class="row">  
+                                <div class="col-md-4 animate fadeIn">   
                                 </div>
-                                <label>First Name</label>
-                                <input class="form-control margin-bottom-20" type="text">
-                                <label>Last Name</label>
-                                <input class="form-control margin-bottom-20" type="text">
-                                <label>Email Address
-                                    <span class="color-red">*</span>
-                                </label>
-                                <input class="form-control margin-bottom-20" type="text">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <label>Password
-                                            <span class="color-red">*</span>
-                                        </label>
-                                        <input class="form-control margin-bottom-20" type="password">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label>Confirm Password
-                                            <span class="color-red">*</span>
-                                        </label>
-                                        <input class="form-control margin-bottom-20" type="password">
+                            </div>
+                          <!-- End Intro / Why Us? -->
+                            <div class="row">
+                                <hr class="margin-top-20 margin-bottom-30">
+                            </div>
+                            <div class="row"> 
+                            <style>
+							 #map {
+   								width: 100%;
+   								height: 500px;
+   								background-color: grey;
+ 								}
+							</style>
+  							<div id="map">
+   							<script>
+      							var map;
+     								 function initMap() {
+        								map = new google.maps.Map(document.getElementById('map'), {
+          								center: {lat: 7, lng: 76},
+          								zoom: 4
+       									 });
+     									 }
+    						</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrUIjSGN6kVO4QzNSQlif0fu2S--N2hVo&callback=initMap"
+    async defer></script>
+                            </div>
+                           
+                            <hr class="margin-top-20 margin-bottom-30">
+                            <!-- Top Panels -->
+                            <div class="row padding-top-20">
+                                <div class="col-md-3 animate fadeInLeft">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading text-center">
+                                            <i class="fa fa-tasks fa-4x"></i>
+                                        </div>
+                                        <div class="panel-body text-center">
+                                            <h3 class="margin-bottom-10">Responsive Layout</h3>
+                                            Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima.
+                                        </div>
                                     </div>
                                 </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-lg-8">
-                                        <label class="checkbox">
-                                            <input type="checkbox">I read the
-                                            <a href="#">Terms and Conditions</a>
-                                        </label>
-                                    </div>
-                                    <div class="col-lg-4 text-right">
-                                        <button class="btn btn-primary" type="submit">Register</button>
+                                <div class="col-md-3 animate fadeIn">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading text-center">
+                                            <i class="fa fa-twitter fa-4x"></i>
+                                        </div>
+                                        <div class="panel-body text-center">
+                                            <h3 class="margin-bottom-10">Bootstrap 3</h3>
+                                            Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima.
+                                        </div>
                                     </div>
                                 </div>
-                            </form>
+                                <div class="col-md-3 animate fadeIn">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading text-center">
+                                            <i class="fa fa-code fa-4x"></i>
+                                        </div>
+                                        <div class="panel-body text-center">
+                                            <h3 class="margin-bottom-10">Clean Code</h3>
+                                            Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 animate fadeInRight">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading text-center">
+                                            <i class="fa fa-list-ul fa-4x"></i>
+                                        </div>
+                                        <div class="panel-body text-center">
+                                            <h3 class="margin-bottom-10">Loaded</h3>
+                                            Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Top Panels -->
+                            <hr class="margin-top-3	0">
+                            <!-- Middle Text -->
+                            <div class="row">
+                                <div class="col-md-12 text-center margin-top-10 animate fadeInUp">
+                                    <h2 class="text-center">Nulla in enim quis ipsum pulvinar imperdiet vitae nec velit..</h2>
+                                    <p class="text-center margin-bottom-20">Aenean venenatis egestas iaculis. Donec non urna quam. Nullam consectetur condimentum dolor at bibendum.</p>
+                                </div>
+                            </div>
+                            <!-- End Middle Text -->
+                            <hr>
                         </div>
-                        <!-- End Register Box -->
                     </div>
                 </div>
             </div>
             <!-- === END CONTENT === -->
+            <!-- === BEGIN FOOTER === -->            
             <!-- Footer -->
             <div id="footer" class="background-grey">
                 <div class="container">
